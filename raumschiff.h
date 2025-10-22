@@ -7,11 +7,11 @@ using namespace std;
 class Raumschiff
 {
 private:
-    string name;
-    int energie;
+    string m_name;
+    uint64_t m_energie;
 
-    int xpos = 0;
-    int ypos = 0;
+    int m_xpos = 0;
+    int m_ypos = 0;
 
 public:
 
