@@ -7,20 +7,20 @@ using namespace std;
 class Raumschiff
 {
 private:
-    string name;
-    int energie;
+    string m_sName;
+    uint32_t m_dwEnergie;
 
-    int xpos = 0;
-    int ypos = 0;
+    uint32_t m_dwXpos = 0;
+    uint32_t m_dwYpos = 0;
 
 public:
 
-    void setName(string n);
-    void setEnergie(int e);
+    void setName(string name);
+    void setEnergie(uint32_t e);
     void setRaumschiff(Raumschiff *r);
-    void setPosition(int x, int y);
+    void setPosition(uint32_t xIn, uint32_t yIn);
     string getName();
-    int getEnergie();
+    uint32_t getEnergie();
     void printData();
 
     void senden(string s);
